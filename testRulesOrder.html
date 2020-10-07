@@ -22,6 +22,13 @@
         src: url("Alegreya[wght]\ pre.ttf");
     }
 
+    @font-face {
+        font-family: "Alegreya Calt";
+        font-weight: 400 900;
+        font-display: swap;
+        src: url("Alegreya[wght]\ calt.ttf");
+    }
+
     body {
         font-family: "Alegreya Pre";
         font-size: 22px;
@@ -52,6 +59,10 @@
     .last {
         font-family: "Alegreya Last";
     }
+
+    .last-calt {
+        font-family: "Alegreya Calt";
+    }
 </style>
 
 <body>
@@ -69,6 +80,18 @@
 
     <div class="last">
         <p class="caption">Rules last</p>
+        <p class="big">
+            <span class="sc">Redaktør $56</span> tør
+        </p>
+        <p class="big">
+            <strong>
+                <span class="sc">Redaktør $56</span> tør
+            </strong>
+        </p>
+    </div>
+
+    <div class="last-calt">
+        <p class="caption">Rules last using calt</p>
         <p class="big">
             <span class="sc">Redaktør $56</span> tør
         </p>

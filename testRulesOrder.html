@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Rules order</title>
+</head>
+<style>
+    @font-face {
+        font-family: "Alegreya Last";
+        font-weight: 400 900;
+        font-display: swap;
+        src: url("Alegreya[wght]\ last.ttf");
+    }
+
+    @font-face {
+        font-family: "Alegreya Pre";
+        font-weight: 400 900;
+        font-display: swap;
+        src: url("Alegreya[wght]\ pre.ttf");
+    }
+
+    body {
+        font-family: "Alegreya Pre";
+        font-size: 22px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .sc {
+        font-variant: small-caps;
+    }
+
+    .caption {
+        margin-top: 3rem;
+        letter-spacing: 0.2em;
+        font-variant: all-small-caps;
+    }
+
+    .big {
+        font-size: 3em;
+    }
+
+    strong {
+        font-weight: 800;
+    }
+
+    .last {
+        font-family: "Alegreya Last";
+    }
+</style>
+
+<body>
+    <div>
+        <p class="caption">Rules first</p>
+        <p class="big">
+            <span class="sc">Redaktør $56</span> tør
+        </p>
+        <p class="big">
+            <strong>
+                <span class="sc">Redaktør $56</span> tør
+            </strong>
+        </p>
+    </div>
+
+    <div class="last">
+        <p class="caption">Rules last</p>
+        <p class="big">
+            <span class="sc">Redaktør $56</span> tør
+        </p>
+        <p class="big">
+            <strong>
+                <span class="sc">Redaktør $56</span> tør
+            </strong>
+        </p>
+    </div>
+</body>
+
+</html>
